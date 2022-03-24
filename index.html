@@ -6,43 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, course, css, tags">
     <meta name="description" content="Это базовый курс по html">
+    <link rel="stylesheet" href="index.css">
     <title>HTML Course!</title>
 </head>
 <body>
-    <img src="https://sun9-7.userapi.com/impf/c858416/v858416656/d40f6/ZreB93FiqS8.jpg?size=1082x1624&quality=96&sign=f9e6cedf6096e1e7018a8bee55d1e631&type=album" alt="Моя фотография" width="150">
+    <div class="container">
+    <div class="info">
+        <img src="https://sun9-7.userapi.com/impf/c858416/v858416656/d40f6/ZreB93FiqS8.jpg?size=1082x1624&quality=96&sign=f9e6cedf6096e1e7018a8bee55d1e631&type=album" alt="Моя фотография" class="avatar">
+        <div class="info-text">
+        <h1>Виталий Борисевич</h1>
+    
+        <br>
 
-    <h1>Виталий Борисевич</h1>
+        <p>Я работаю <strong>оператором станков с программным управлением</strong> в компании по производству поездов <strong>Stadler.</strong></p>
 
-    <br>
+        <p><em>Я люблю путешествовать, знакомиться с новыми людьми, открывать что-то новое для себя.</em></p>
 
-    <p>Я работаю <strong>оператором станков с программным управлением</strong> в компании по производству поездов <strong>Stadler.</strong></p>
+        <h4>Список социальных сетей:</h4>
 
-    <p><em>Я люблю путешествовать, знакомиться с новыми людьми, открывать что-то новое для себя.</em></p>
-
-    <h4>Список социальных сетей:</h4>
-
-    <a href="https://vk.com/vitalii_barysevich" target="_blank">Вконтакте</a>
-    |
-    <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
-    |
-    <a href="https://www.instagram.com/vitalii_barysevich/" target="_blank">Instagram</a>
-
+        <a href="https://vk.com/vitalii_barysevich" target="_blank">Вконтакте</a>
+        |
+        <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
+        |
+        <a href="https://www.instagram.com/vitalii_barysevich/" target="_blank">Instagram</a>
+    </div>
+    </div>
+    <div class="card bg-yellow">
         <h3>Мои хобби:</h3>
-    <ol>
+    <ol class="list">
         <li>Катание на коньках</li>
         <li>Путешествия</li>
         <li>Программирование</li>
     </ol>
+</div>
+<div class="card bg-red">
 
     <h3>Опыт работы:</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
+    <table class="table">
+    
+        <!-- <thead>
+        <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+        </tr>
+    </thead> -->
         <tbody>
         <tr>
                 <td>Амкадор-Дзержинск</td>
@@ -65,26 +73,28 @@
             </tr>
         </tbody>
     </table>
-
+</div>
+    
+<form action="/" class="form">
     <h3>Связаться со мной</h3>
-
-    <form action="">
-    <div>
+    <div class="form-row">
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="name" id="name"
         placeholder="Введитет имя">
     </div>
-    <div>
+    <div class="form-group">
         <label for="email">Ваш Email:</label>
         <input type="Ваш email" id="email"
         placeholder="Введите email">
     </div>
-    <div>
+</div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
         <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
     </div>
-    <input type="submit" value="Отправить!">
+    <input type="submit" value="Отправить!" class="btn">
     </form>
+    </div>
 </body>
 </html>
